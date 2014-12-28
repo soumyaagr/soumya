@@ -10,11 +10,10 @@ public class SqlSelect{
 
         Statement stmt = null;
         try {
-
             stmt = conn.createStatement();
 
             boolean s;
-            String sql = "SELECT * FROM person";
+            String sql = "SELECT * FROM person where id=2";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 int id = rs.getInt("id");

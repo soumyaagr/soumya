@@ -9,7 +9,7 @@ public class CsvReader {
 	BufferedReader br = new BufferedReader(fr);
 	String line;
 	while((line = br.readLine())!=null) {
-        	StringTokenizer st = new StringTokenizer(line, ",");
+        StringTokenizer st = new StringTokenizer(line, ",");
 		String a = st.nextToken();
 		System.out.println("name=" + a);
 		System.out.println("age=" + st.nextToken());
